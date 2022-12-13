@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.0.5] (2022-12-13)
+
+### Bug fixes
+
+- Used dynamic environment instead
+
+### Features
+
+- N/A
+
+### BREAKING CHANGES
+
+- N/A
+
 ## [v1.0.4] (2022-12-13)
 
 ### Bug fixes
