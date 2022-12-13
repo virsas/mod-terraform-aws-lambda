@@ -98,7 +98,7 @@ variable "env" {
   default     = null
 }
 
-variable "policy_enabled" {
+variable "enable_policy" {
   description = "Enable resource policy on this lambda function. By default it is disabled."
   type        = bool
   default     = false
