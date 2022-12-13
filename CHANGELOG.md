@@ -1,5 +1,19 @@
 # Changelog
 
+## [v2.0.0] (2022-12-13)
+
+### Bug fixes
+
+- N/A
+
+### Features
+
+- Added function policy, by default it is disabled.
+
+### BREAKING CHANGES
+
+- N/A
+
 ## [v1.0.5] (2022-12-13)
 
 ### Bug fixes

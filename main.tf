@@ -39,3 +39,15 @@ resource "aws_lambda_function" "vss" {
     }
   }
 }
+
+resource "aws_lambda_permission" "vss" {
+  count             = var.enable_policy ? 1 : 0
+
+  action            = var.policy_action
+  function_name     = aws_lambda_function.vss.function_name
+
+  principal         = var.policy_principal
+
+  source_account    = var.policy_source_account
+  source_arn        = var.policy_source_arn
+}

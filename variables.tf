@@ -97,3 +97,33 @@ variable "env" {
   type        = map(string)
   default     = null
 }
+
+variable "policy_enabled" {
+  description = "Enable resource policy on this lambda function. By default it is disabled."
+  type        = bool
+  default     = false
+}
+
+variable "policy_action" {
+  description = "The AWS Lambda action you want to allow in this statement. By default lambda:InvokeFunction"
+  type        = string
+  default     = "lambda:InvokeFunction"
+}
+
+variable "policy_principal" {
+  description = " The principal who is getting this permission. s3.amazonaws.com, an AWS account ID, or AWS IAM principal, or AWS service principal such as events.amazonaws.com or sns.amazonaws.com. By default it is s3.amazonaws.com"
+  type        = string
+  default     = "s3.amazonaws.com"
+}
+
+variable "policy_source_account" {
+  description = "Optional. The ID of AWS account that is allowed to trigger the function"
+  type        = string
+  default     = null
+}
+
+variable "policy_source_arn" {
+  description = "Optional. The ARN of the resource that is allowed to trigger the function"
+  type        = string
+  default     = null
+}

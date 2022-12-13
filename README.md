@@ -1,6 +1,6 @@
 # mod-terraform-aws-lambda
 
-Terraform module to create AWS lambda function.
+Terraform module to create AWS lambda function with optional permissions.
 
 ## Variables
 
@@ -20,6 +20,11 @@ Terraform module to create AWS lambda function.
 - **publish** - Weather to publish a change as a new version of lambda function. Valid values true/false. Defaults to true.
 - **storage** - The amount of /tmp storage allocated for the Lambda. In MB. Defaults to 512.
 - **env** - In case your lambda needs env variables you can configure them as list of objects {\"foo\" = \"bar\"}.
+- **policy_enabled** - Enable resource policy on this lambda function. By default it is disabled.
+- **policy_action** - The AWS Lambda action you want to allow in this statement. By default lambda:InvokeFunction
+- **policy_principal** -  The principal who is getting this permission. s3.amazonaws.com, an AWS account ID, or AWS IAM principal, or AWS service principal such as events.amazonaws.com or sns.amazonaws.com. By default it is s3.amazonaws.com
+- **policy_source_account** - Optional. The ID of AWS account that is allowed to trigger the function
+- **policy_source_arn** - Optional. The ARN of the resource that is allowed to trigger the function
 
 ## Example
 
