@@ -95,5 +95,5 @@ variable "storage" {
 variable "env" {
   description = "In case your lambda needs env variables you can configure them as list of objects {\"foo\" = \"bar\"}"
   type        = map
-  default     = {}
+  default     = {"foo" = "bar"}
 }
