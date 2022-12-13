@@ -1,5 +1,20 @@
 # Changelog
 
+## [v1.0.2] (2022-12-13)
+
+### Bug fixes
+
+- Fixed architecture implementation
+- Storage available in AWS provider 4.8 and greater
+
+### Features
+
+- N/A
+
+### BREAKING CHANGES
+
+- Required version of AWS provider now 4.8 and greater
+
 ## [v1.0.1] (2022-12-13)
 
 ### Bug fixes
