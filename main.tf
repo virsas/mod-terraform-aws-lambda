@@ -15,7 +15,7 @@ resource "aws_lambda_function" "vss" {
   filename          = "${var.lambda_path}/${var.name}.zip"
   source_code_hash  = filebase64sha256("${var.lambda_path}/${var.name}.zip")
 
-  architectures     = [ var.architecture ]
+  architectures     = var.architecture
   runtime           = var.runtime
   handler           = var.handler
 
