@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.0.3] (2022-12-13)
+
+### Bug fixes
+
+- At least one variable is required if env is set, so added the example
+
+### Features
+
+- N/A
+
+### BREAKING CHANGES
+
+- N/A
+
 ## [v1.0.2] (2022-12-13)
 
 ### Bug fixes
