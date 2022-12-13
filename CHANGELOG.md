@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.0.4] (2022-12-13)
+
+### Bug fixes
+
+- Edge lambda cannot be with ENV variables, so I introduced hasENV variable, disabled by default
+
+### Features
+
+- N/A
+
+### BREAKING CHANGES
+
+- N/A
+
 ## [v1.0.3] (2022-12-13)
 
 ### Bug fixes

@@ -28,7 +28,5 @@ resource "aws_lambda_function" "vss" {
     size = var.storage
   }
 
-  environment {
-    variables = var.env
-  }
+  environment = var.hasENV ? { variables = var.env } : null
 }

@@ -92,8 +92,14 @@ variable "storage" {
   default     = 512
 }
 
+variable "hasENV" {
+  description           = "Enable / Disable environment configuration"
+  type                  = bool
+  default               = false
+}
+
 variable "env" {
-  description = "In case your lambda needs env variables you can configure them as list of objects {\"foo\" = \"bar\"}"
+  description = "In case your lambda needs env variables you can configure them as list of objects {\"foo\" = \"bar\"}. hasENV must be set to true too."
   type        = map
   default     = {"foo" = "bar"}
 }
