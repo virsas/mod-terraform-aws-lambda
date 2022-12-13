@@ -8,7 +8,7 @@ provider "aws" {
 }
 
 locals {
-  environment_map = var.environment_vars[*]
+  env_map = var.env[*]
 }
 
 resource "aws_lambda_function" "vss" {
@@ -33,7 +33,7 @@ resource "aws_lambda_function" "vss" {
   }
 
   dynamic "environment" {
-    for_each = local.environment_map
+    for_each = local.env_map
     content {
       variables = environment.value
     }
